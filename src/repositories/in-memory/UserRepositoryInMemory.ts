@@ -3,7 +3,7 @@ import { IUsersRepository } from "../IUsersRepositories";
 import { v4 as uuid } from 'uuid';
 
 
-class UserRepositoryInMemory implements IUsersRepository{
+class UsersRepositoryInMemory implements IUsersRepository{
   private users: User[] = []
 
   async create(user: User): Promise<User>{
@@ -21,4 +21,4 @@ class UserRepositoryInMemory implements IUsersRepository{
   }
 }
 
-export { UserRepositoryInMemory }
+export { UsersRepositoryInMemory }
